@@ -1,0 +1,6 @@
+<!-- Réprésente la page des Actualités Silène -->
+
+<!-- Display News-->
+<div *ngFor="let news of (myData ? myData.slice(0,10):[]);let i = index">
+	<app-news-card ></app-news-card>
+</div>

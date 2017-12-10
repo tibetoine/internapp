@@ -1,0 +1,9 @@
+
+.silene-news-card{
+  width: 400px;
+}
+
+.silene-news-card-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}

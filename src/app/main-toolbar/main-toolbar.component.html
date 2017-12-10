@@ -1,0 +1,51 @@
+<mat-toolbar color="primary">
+	<mat-toolbar-row class="silene-toolbar">
+		<button mat-icon-button>
+			<mat-icon (click)="sidenav.toggle()" class="silene-icon" aria-hidden="true">menu</mat-icon>
+		</button>
+
+		<span>Mon Silène</span>
+		<span class="silene-spacer"></span>
+
+
+		<button mat-button>Services</button>
+		<button mat-button>Contact</button>
+		<mat-icon class="silene-icon">favorite</mat-icon>
+		
+	</mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container class="example-container" >
+	<mat-sidenav class="silene-sidenav" #sidenav mode="over">
+		<mat-toolbar color="primary">
+			<mat-toolbar-row class="silene-sidenav-row">
+				<button href="/news" routerLink="/news" class="silene-menu-button" mat-button>
+					<span><mat-icon aria-label="Actualités" fontSet="mdi" fontIcon="mdi-newspaper"></mat-icon>
+					Actualités</span>
+				</button>
+			</mat-toolbar-row>
+			<mat-toolbar-row class="silene-sidenav-row">
+				<button href="/annuaire" routerLink="/annuaire" class="silene-menu-button" mat-button>
+					<span><mat-icon aria-label="Annuaire" fontSet="mdi" fontIcon="mdi-contacts"></mat-icon>
+					Annuaire</span>
+				</button>
+			</mat-toolbar-row>
+			<mat-toolbar-row class="silene-sidenav-row">
+				<button href="/idees" routerLink="/idees" class="silene-menu-button" mat-button>
+					<span><mat-icon aria-label="Boite à idée" fontSet="mdi" fontIcon="mdi-lightbulb"></mat-icon>
+					Idée</span>
+				</button>
+			</mat-toolbar-row>
+			<mat-toolbar-row class="silene-sidenav-row">
+				<button href="/help" routerLink="/help" class="silene-menu-button" mat-button>
+					<span><mat-icon aria-label="Aide" fontSet="mdi" fontIcon="mdi-help-box"></mat-icon>
+					Aide</span>
+				</button>
+			</mat-toolbar-row>
+		</mat-toolbar>
+	</mat-sidenav>
+
+	<mat-sidenav-content>
+		<router-outlet></router-outlet>
+	</mat-sidenav-content>
+</mat-sidenav-container>

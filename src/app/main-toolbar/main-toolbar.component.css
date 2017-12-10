@@ -1,0 +1,30 @@
+.silene-sidenav{
+	width:200px;
+}
+
+.silene-toolbar{
+	margin:0;
+	padding:0;
+	padding-left:4px;
+}
+
+.silene-menu-button{
+	margin:0;
+	padding:0;
+	padding-left:10px;
+	width:100%;
+	height:100%;
+	text-align:left;
+}
+
+.silene-sidenav-row{
+	text-align:left;
+	padding:0;
+	margin:0;
+}
+
+.silene-menu-button span{
+	text-align:left;
+	font-size:1.4em;
+	line-height:100%;
+}
